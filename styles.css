@@ -47,7 +47,7 @@ input[type=number] {
     padding: .45em;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 50%;
+    width: 40%;
 }
 
 input[type=submit] {
@@ -77,8 +77,8 @@ button:hover {
     font-weight: bold;
 }
 img{
-    height: 30px;
-    padding-right: 1%;
+    height: 40px;
+    padding-right: 3%;
 }
 .float-two p{
     padding-bottom: 1.2em;
