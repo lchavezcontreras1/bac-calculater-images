@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Alcohol Content Calculator</title>
+    <!--CSS-->
+    <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+<form>
+    <fieldset class="float">
+        <legend>Blood Alcohol Content (BAC) Calculator</legend>
+        <div class="float-one">
+            <div><p><label for="weight">Insert weight in pounds:</label></p>
+                <p><input type="number" id="weight" name="weight" min="0"></p></div>
+
+            <div><p><label for="hours">Amount of hours since last drink:</label></p>
+            <p><input type="number" id="hours" name="hours" step="0"></p></div>
+
+            <div><p><label for="beer">Amount of beers consumed:</label></p>
+                <p><input type="number" id="beer" name="beer" min="0"></p></div>
+
+            <div><p><label for="wine">Amount of wine glasses consumed:</label></p>
+                <p><input type="number" id="wine" name="wine" min="0"></p></div>
+
+            <div><p><label for="shot">Amount of shots consumed:</label></p>
+                <p><input type="number" id="shot" name="shot" min="0"></p></div>
+
+            <div><input type="submit" id="submit" name="submit" value="Calculate BAC"></div>
+        </div> <!--closes float-one-->
+        <div class="float-two">
+            <p id="beer-output"></p>
+            <p id="wine-output"></p>
+            <p id="shot-output"></p>
+            <p id="bac"></p>
+        </div> <!--closes float-two-->
+    </fieldset>
+</form>
+
+<!--JS-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

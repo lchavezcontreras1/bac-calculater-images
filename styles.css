@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Quattrocento', "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    line-height: 1.5;
+    background-color: #fff;
+    text-align: left;
+}
+
+h1 {
+    padding: 1em 4%;
+}
+
+fieldset {
+    padding: 1% 4%;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin: 1em auto;
+    width: 95%;
+}
+
+legend {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    padding: .375em;
+    text-align: left;
+    color: #40291c;
+}
+
+div {
+    margin-bottom: 1.5em;
+}
+
+p {
+    font-size: 1.2em;
+    padding-bottom: .5em;
+}
+
+input[type=number] {
+    font-size: .90em;
+    padding: .45em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+}
+
+input[type=submit] {
+    background-color: darkgray;
+    padding: 10px;
+    color: #fff;
+    width: 225px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.float {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.float-one {
+    margin-right: 2%;
+    width: 50%;
+}
+#bac{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+img{
+    height: 30px;
+    padding-right: 1%;
+}
+.float-two p{
+    padding-bottom: 1.2em;
+}
