@@ -34,7 +34,7 @@ function calculateBAC(e) {
     let finalBAC = bac - hours;
     //beer outputs
     if (beer) {
-        let beerOutput = $("p#beer-output").css("color", "black").text(`${beerAmount} ounces of alcohol.`);
+        let beerOutput = $("p#beer-output").css("color", "black").text(`${beerAmount.toFixed(3)} ounces of alcohol.`);
         for (let i = 0; i < beer; i++) {
             beerOutput.prepend($("<img src='images/beer.png' alt='a beer cup' class='beer'>"));
         }
@@ -43,7 +43,7 @@ function calculateBAC(e) {
     }
     //wine outputs
     if (wine) {
-        let wineOutput = $("p#wine-output").css("color", "black").text(`${wineAmount} ounces of alcohol.`);
+        let wineOutput = $("p#wine-output").css("color", "black").text(`${wineAmount.toFixed(3)} ounces of alcohol.`);
         for (let i = 0; i < wine; i++) {
             wineOutput.prepend($("<img src='images/wine.png' alt='a wine glass' class='wine'>"));
         }
@@ -52,7 +52,7 @@ function calculateBAC(e) {
     }
     //wine output
     if (shot) {
-        let shotOutput = $("p#shot-output").css("color", "black").text(`${shotAmount} ounces of alcohol.`);
+        let shotOutput = $("p#shot-output").css("color", "black").text(`${shotAmount.toFixed(3)} ounces of alcohol.`);
         for (let i = 0; i < shot; i++) {
             shotOutput.prepend($("<img src='images/shot.png' alt='a shot cup' class='shot'>"));
         }
